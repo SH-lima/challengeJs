@@ -38,15 +38,8 @@
 
 //afficher la chaine de caractère suivante exepté la première lettre.
 // const team = 'avengers';
-// const element2 = team[1];
-// const element3 = team[2];
-// const element4 = team[3];
-// const element5 = team[4];
-// const element6 = team[5];
-// const element7 = team[6];
-// const element8 = team[7];
-// const elements = element2 + element3 + element4 + element5 + element6 + element7 +element8;
-// console.log(elements);
+// console.log(team.substring(1));
+
 
 
 
@@ -62,14 +55,12 @@
 //Afficher la chaine de caractère suivante avec seulement la première lettre en majuscule.
 // let team = 'aveNgers';
 // //=> Avengers
-// team = team.toLowerCase();
-// function name(a){
-//     return (a+'').charAt(0).toUpperCase()+a.substr(1);
-// }
-// console.log(name(team));
+// const firstLet = team[0].toUpperCase();
+// const restLet = (team.substring(1)).toLowerCase();
+// console.log(firstLet + restLet);
 
 
-
+// methode splice 
 //Les tableaux
 //Déclarez un tableau avec 5 villes
 //Afficher la ville à l'indice 3
@@ -77,9 +68,10 @@
 //Supprimer la ville à l'indice 2
 // let villes = ["paris", "london", "newyork", "prague", "budpest"];
 // console.log(villes[3]);
-// villes = ["paris", "london", "newyork", "prague", "budpest", "berlin"];
+// villes.splice(villes.length, 0, "berlin");
 // console.log(villes);
-// villes =["paris", "london", "prague", "budpest", "berlin"];
+// villes.splice(2, 1);
+// console.log(villes);
 
 
 
@@ -145,15 +137,82 @@
 
 //Créez deux variables initialisées à 3 et 4.
 //Créez une fonction qui retourne l'addition de ces deux valeurs.
-const num1 = 3;
-const num2 = 4;
+// const a = 3;
+// const b = 4;
 // const add = (num1, num2) => {
-    const reducer = (a, b) => a + b; 
-    console.log(array1.reduce(reducer));
+//     return num1 + num2
+//     };
+// console.log(add(a, b));    
 
-//     const array1 = [1, 2, 3, 4, 5];
-// 
+    
 
-// // 1 + 2 + 3 + 4
-// 
-// // expected output: 10
+
+
+    //Créez une fonction qui prend en paramètre la valeur i. La fonction doit
+//retourner la valeur i au carré et l'afficher.
+
+// const square = (number) => {
+//     return number * 2
+// };
+// const i = 5 ;
+// console.log(square(i));
+
+
+
+// En utilisant la methode 'map', mettre la chaine de
+// caractère en majuscule.
+// const beatles = ["paul", "john", "ringo", "george"];
+// const beatlesMaj = beatles.map((element) => element.toUpperCase());
+
+// console.log(beatlesMaj);
+
+
+
+//Créez un tableau nommé tab dont le premier
+//élément est 2, le deuxième 3 et le troisième 4.
+//Créez une fonction qui renvoit la somme des éléments du tableau
+// const tab =[2, 3, 4]
+// const reducer = (a, b) => a + b; 
+// const somme = tab.reduce(reducer);
+// console.log(somme);
+// //Tri à bulle
+// //Classé les éléments du tableau suivant par ordre croissant.
+// //Affichez le tableau classé.
+// console.log(tab.sort());
+
+
+
+
+                    //Créez une fonction qui renvoie la somme de chaque éléments du
+                    //tableau si celui-ci est positif.
+                    // const array2 = [-2, 4, -5, 3, 6];
+                    // const addPositiveNumber = somme => 
+                    // somme.forEach((element)=> {
+                    //     if (element >0 )
+                    //     somme.reduce((a, b) => a+b )
+                    // });
+                    // addPositiveNumber(array2)
+
+
+
+
+
+//Créez une fonction qui prend un parametre 'r' et qui
+//renvoie le périmetre d'un cercle.
+// const périmetreCercle = (r) => {
+//     return 2*r*3.14 
+//   };
+//   console.log(périmetreCercle(r));
+
+
+
+
+  
+  //Créez une fonction qui met la premiere lettre d'un mot en majuscule.
+  //Le reste du mot doit être en minuscule.
+  //Le mot est "SimPloN"
+//   mot = "SimPlon"
+//   const capitalize = (word) => {
+//      console.log(word[0].toUpperCase() + word.slice(1).toLowerCase());
+//   };
+//  capitalize(mot) ;                           
