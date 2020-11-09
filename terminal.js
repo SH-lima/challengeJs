@@ -183,16 +183,6 @@
 
 
 
-                    //Créez une fonction qui renvoie la somme de chaque éléments du
-                    //tableau si celui-ci est positif.
-                    // const array2 = [-2, 4, -5, 3, 6];
-                    // const addPositiveNumber = somme => 
-                    // somme.forEach((element)=> {
-                    //     if (element >0 )
-                    //     somme.reduce((a, b) => a+b )
-                    // });
-                    // addPositiveNumber(array2)
-
 
 
 
@@ -215,4 +205,76 @@
 //   const capitalize = (word) => {
 //      console.log(word[0].toUpperCase() + word.slice(1).toLowerCase());
 //   };
-//  capitalize(mot) ;                           
+//  capitalize(mot) ; 
+
+
+
+
+//Odd or Even
+//Créez un fonction qui prend un nombre en parametre et qui renvoie :
+//paire si le nombre est pair
+//impaire si le nombre est impair
+//Tips : jetez un coup d'oeil à l'opérateur '%' dans la doc
+// const nombre = (element) => {
+//   if ((element%2)===0){
+//     console.log(`${element} est un nombre pair`)
+//   }else {
+//     console.log(`${element} est un nombre impair`)
+//   }
+// };
+// nombre(6)
+
+
+
+
+
+
+
+//Mot inversé
+//créez une fonction qui prend en paramètre une chaine de caractère.
+//Cette fonction renvoie la chaine de caractère inversée.
+//ex: reverseWord('simplon') ==> 'nolpmis'
+//Aide : join(), split(), reverse()
+// const reverseWord = (word) => {
+// console.log(word.reverse());
+// };
+// reverseWord('simplon')
+// function reverseString(str) {
+//   console.log(str.split("").reverse().join("")) ;
+// }
+// reverseString("simplon");
+
+// const string = (str) => {
+//   console.log(str.split("").reverse().join(""));
+// }
+// string("simplon");
+
+
+
+
+
+
+
+//Reprendre la fonction qui permet de calculer la somme d'un tableau
+//Le tableau est le suivant : 
+// const nombres = [3, 5, 6, 2];
+// const sum = nombres.reduce((a, b) =>{
+//   return a + b 
+// })
+// console.log(sum)
+
+
+                    //Créez une fonction qui renvoie la somme de chaque éléments du
+                    //tableau si celui-ci est positif.
+                    const array2 = [-2, 4, -5, 3, 6];
+                    array2.map((i) => {
+                      if(i<0){
+                    console.log(array2.splice(i, 0))    
+                      }
+                    } );
+                    
+                    const addPositiveNumber = array2.reduce((a, b)=>{
+                      return a+b 
+                    });
+                    console.log(addPositiveNumber);
+                    
